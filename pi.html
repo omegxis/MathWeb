@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pi approximation Visualizer</title>
+	<link rel="stylesheet" href="pi.css">
+
+</head>
+
+<body onload="draw();">
+
+	<canvas id="canvas" width="150" height = "150"></canvas>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p>Number of points: <span id="value"></span></p>
+</div>
+<button onClick="remove()">Click me</button>
+<p id="special"></p>
+
+<script src = "pi.js"></script>
+
+</body>
+
+
+
+
+
+
+
+</html>
