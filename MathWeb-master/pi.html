@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pi approximation Visualizer</title>
+	<script src="plotly_latest.min.js"></script>
+	<link rel="stylesheet" href="pi.css">
+
+</head>
+
+<body onload="draw();">
+
+	<canvas id="canvas" width="120" height = "120"></canvas>
+<div class="slidecontainer">
+  <input type="range" min="0" max="200" value="50" class="slider" id="myRange">
+  <p>Number of points: <span id="value"></span></p>
+</div>
+<p id="special"></p>
+
+<script src = "pi.js"></script>
+
+<div id="tester" style="width:600px;height;250px;"></div>
+
+</body>
+
+<script>
+	var x = [];
+for (var i = 0; i < 500; i ++) {
+	x[i] = Math.random();
+}
+
+var trace = {
+    x: x,
+    type: 'histogram',
+  };
+var data = [trace];
+Plotly.newPlot('tester', data);
+</script>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="plotly_latest.min.js"></script>
+</head>
+
+<body onload="draw()">
+	<div style="text-align:center">
+		<canvas id="canvas" width="200" height = "200"></canvas>
+	</div>
+	<button onclick="startAnimation()">Begin Animation</button>
+	<button onclick="clearCanvas()">Clear Canvas</button>
+	<p>Total Number of Points: </p><p id="numPoints"></p>
+	<p>Pi estimate: </p><p id="estimate"></p> 
+</body>
+
+
+
+<script src="approx.js"></script>
+
+</html>
